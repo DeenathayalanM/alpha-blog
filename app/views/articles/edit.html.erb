@@ -1,0 +1,12 @@
+<h1> Editing article
+</h1>
+
+<%= render "erroe_display" %>
+
+<%= form_with model: @article , local: true do |f| %>
+<%= f.label :title %>
+<%= f.text_field :title %> <br /> <br />
+<%= f.label :desc %>
+<%= f.text_area :desc %> <br /> <br />
+<%= f.submit 'Update article' %>
+<% end %>
