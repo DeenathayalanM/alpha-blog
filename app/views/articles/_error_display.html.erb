@@ -1,8 +1,15 @@
 <% if @article.errors.any? %>
-<h2> The following error messages prevented the article beeing saved </h2>
-<ul>
-  <% @article.errors.full_messages.each do |msg| %>
-  <li> <%= msg %> </li>
-  <% end %>
-</ul>
+<div class="row justify-content-center mt-3">
+  <div class="alert alert-warning alert-dismissible fade show w-50" role="alert">
+    <h2> The following error messages prevented the article beeing saved </h2>
+    <ul>
+      <% @article.errors.full_messages.each do |msg| %>
+      <li> <%= msg %> </li>
+      <% end %>
+    </ul>
+
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
+
 <% end %>

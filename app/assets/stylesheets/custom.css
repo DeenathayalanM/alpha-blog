@@ -1,0 +1,43 @@
+#main-nav {
+  background-color:  black ;
+}
+
+.nav-link, .navbar-brand,.nav-item{
+  color: white !important;
+}
+
+.navbar-brand{
+  color: white !important;
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.home-page{
+  width: 1000px;
+  height: 500px;
+  background-image: url('tree.jpg');
+}
+
+.footer{
+  background-color: black;
+  height: 50px;
+}
+.page-content{
+  width: 100%;
+  min-height: 100vh; 
+  background-color: lightgray !important;
+}
+.card-header{
+  font-style: italic !important;
+  color: blue;
+  font-weight: 800;
+}
+.form-background{
+  margin-top: 20px;
+  background-color: #17a2b8;
+}
+
+.card-title{
+  text-decoration-style: none !important;
+}

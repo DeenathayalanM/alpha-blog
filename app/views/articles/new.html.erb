@@ -1,14 +1,11 @@
-<h1>Create a article
-</h1>
+<div class="page-content">
 
+  <h1 class="text-center m-0 pt-4">Create new article</h1>
 
-<%= render "error_display" %>
+  <%= render "error_display" %>
 
-
-<%= form_with model: @article  do |f| %>
-<%= f.label :title %>
-<%= f.text_field :title%><br /><br />
-<%= f.label :desc %>
-<%= f.text_area :desc%><br /><br />
-<%= f.submit 'Create article' %>
-<% end %>
+  <%= render "form" , button_text: 'Create article' %>
+  <div class="text-center pt-5">
+    <%= link_to '[Back to article home page]' , articles_path, class: "text-info text-decoration-none" %>
+  </div>
+</div>
